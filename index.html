@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sellivue</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <main class="home">
+
+    <header class="header">
+      <div class="logo-container">
+        <a href="./index.html" class="main-logo-img">
+          <svg width="147" height="25" viewBox="0 0 147 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.248 7.636C1.248 6.27067 1.6 5.06533 2.304 4.02C3.008 2.97467 3.97867 2.164 5.216 1.588C6.47467 0.990666 7.92533 0.691999 9.568 0.691999C11.1467 0.691999 12.512 0.969332 13.664 1.524C14.8373 2.07867 15.744 2.868 16.384 3.892C17.0453 4.916 17.3973 6.132 17.44 7.54H13.344C13.3013 6.53733 12.9387 5.75867 12.256 5.204C11.5733 4.628 10.656 4.34 9.504 4.34C8.24533 4.34 7.232 4.628 6.464 5.204C5.71733 5.75867 5.344 6.52667 5.344 7.508C5.344 8.34 5.568 9.00133 6.016 9.492C6.48533 9.96133 7.21067 10.3133 8.192 10.548L11.872 11.38C13.8773 11.8067 15.3707 12.5427 16.352 13.588C17.3333 14.612 17.824 15.9987 17.824 17.748C17.824 19.1773 17.472 20.436 16.768 21.524C16.064 22.612 15.0613 23.4547 13.76 24.052C12.48 24.628 10.976 24.916 9.248 24.916C7.60533 24.916 6.16533 24.6387 4.928 24.084C3.69067 23.508 2.72 22.708 2.016 21.684C1.33333 20.66 0.970667 19.4547 0.928 18.068H5.024C5.04533 19.0493 5.42933 19.828 6.176 20.404C6.944 20.9587 7.97867 21.236 9.28 21.236C10.6453 21.236 11.7227 20.9587 12.512 20.404C13.3227 19.828 13.728 19.0707 13.728 18.132C13.728 17.3213 13.5147 16.6813 13.088 16.212C12.6613 15.7213 11.968 15.38 11.008 15.188L7.296 14.356C5.312 13.9293 3.808 13.1613 2.784 12.052C1.76 10.9213 1.248 9.44933 1.248 7.636ZM36.3775 24.5H21.8495V1.108H36.3775V4.884H24.5055L25.9455 3.572V10.9H35.2895V14.516H25.9455V22.036L24.5055 20.724H36.3775V24.5ZM45.203 1.108V24.5H41.107V1.108H45.203ZM41.811 24.5V20.724H54.963V24.5H41.811ZM62.7417 1.108V24.5H58.6457V1.108H62.7417ZM59.3497 24.5V20.724H72.5017V24.5H59.3497ZM80.2805 1.108V24.5H76.1845V1.108H80.2805ZM92.3457 24.5L83.5137 1.108H87.8657L92.9857 14.58C93.2417 15.2627 93.4871 15.9773 93.7217 16.724C93.9564 17.4707 94.2017 18.3133 94.4577 19.252C94.7351 18.228 95.0017 17.3427 95.2577 16.596C95.5137 15.8493 95.7484 15.1773 95.9617 14.58L101.018 1.108H105.274L96.5697 24.5H92.3457ZM108.352 15.956V1.108H112.448V15.7C112.448 17.3853 112.896 18.676 113.792 19.572C114.688 20.468 115.957 20.916 117.6 20.916C119.264 20.916 120.544 20.468 121.44 19.572C122.336 18.6547 122.784 17.364 122.784 15.7V1.108H126.88V15.956C126.88 17.7693 126.496 19.348 125.728 20.692C124.981 22.0147 123.915 23.0493 122.528 23.796C121.141 24.5213 119.499 24.884 117.6 24.884C115.723 24.884 114.091 24.5213 112.704 23.796C111.317 23.0707 110.24 22.036 109.472 20.692C108.725 19.348 108.352 17.7693 108.352 15.956ZM146.766 24.5H132.238V1.108H146.766V4.884H134.894L136.334 3.572V10.9H145.678V14.516H136.334V22.036L134.894 20.724H146.766V24.5Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-container" id="nav-container">
+        <ul class="nav-links">
+          <li><a href="#" class="font-medium">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <!-- <img src="./assets/images/search-icon.svg" alt="search-icon"> -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.2286 19.4571C15.7731 19.4571 19.4571 15.7731 19.4571 11.2286C19.4571 6.68409 15.7731 3 11.2286 3C6.68405 3 3 6.68409 3 11.2286C3 15.7731 6.68405 19.4571 11.2286 19.4571Z"
+              stroke="#171717" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21.0001 21L18.4287 18.4286" stroke="#171717" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <!-- <img src="./assets/images/shopping-bag icon.svg" alt="bag-icon"> -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.40002 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.51003C4.00003 22 3.24002 19.99 3.54002 17.53L4.44003 10.03C4.66003 8.09 5.00002 6.5 8.40002 6.5Z"
+              stroke="#171717" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 8V4.5C8 3 9 2 10.5 2H13.5C15 2 16 3 16 4.5V8" stroke="#171717" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20.41 17.03H8" stroke="#171717" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+        </div>
+      </nav>
+
+    </header>
+
+
+    <!-- Hero Section  -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h1 class="h1 font-bold">Time. Precision. Mastered</h1>
+            <h6 class="h6 font-medium">Introducing Sellivue — Where Modern Design Meets Timeless Craftsmanship In Every
+              Detail.
+            </h6>
+
+            <button class="btn">
+              <p class="font-black">Explore Products</p>
+            </button>
+          </div>
+
+          <div class="watch section">
+            <figure>
+              <div class="hero-watch">
+                <img src="./assets/images/watch-1.png" alt="watch-1">
+              </div>
+              <div class="hero-banner">
+                <img src="./assets/images/hero2.png" alt="banner">
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- swiper section -->
+    <section class="swiper-section">
+      <div class="container">
+
+        <div class="swiper-header">
+          <div>
+            <span>
+              <h2 class="font-medium">Choose Your Perfect Timepiece</h2>
+              <img src="./assets/images/Vector 1.png" alt="arrow">
+            </span>
+          </div>
+          <div class="swiper-navigation">
+            <img src="./assets/images/left-arrow.png" alt="left-arrow" class="swiper-button-before">
+            <img src="./assets/images/right-arrow.png" alt="right-arrow" class="swiper-button-after">
+          </div>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+
+                <div class="watch-bg">
+                  <div class="watch-image">
+                    <img src="./assets/images/Ellipse 3.png" class="eclipse-bg" alt="Background Circle" />
+                    <img src="./assets/images/watch-1.png" alt="Gold Watch" class="watch-img1" />
+                  </div>
+                </div>
+
+                <div class="watch-info">
+                  <h3 class="font-bold">Timeless Gold Elegance</h3>
+                  <p class="font-medium time-text">
+                    Experience the richness of 18K gold with our signature timepiece.
+                    The polished gold-plated case and emerald green dial are a perfect match
+                    for those who appreciate the finer things in life. A timeless choice for modern sophistication.
+                  </p>
+                  <div class="price-cart">
+
+                    <button class="price">
+                      <p class="font-black">$2,500</p>
+                    </button>
+
+                    <button class="add-to-cart">
+                      <div class="cart-original">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.00002 5.41675H13C15.8334 5.41675 16.1167 6.74175 16.3084 8.35841L17.0584 14.6084C17.3 16.6584 16.6667 18.3334 13.75 18.3334H6.25835C3.33335 18.3334 2.70002 16.6584 2.95002 14.6084L3.70003 8.35841C3.88336 6.74175 4.16669 5.41675 7.00002 5.41675Z"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M6.66663 6.66675V3.75008C6.66663 2.50008 7.49996 1.66675 8.74996 1.66675H11.25C12.5 1.66675 13.3333 2.50008 13.3333 3.75008V6.66675"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M17.0083 14.1917H6.66663" stroke="black" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <span class="text font-black">Add To Cart</span>
+                      </div>
+
+                      <div class="cart-hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.00002 5.41675H13C15.8334 5.41675 16.1167 6.74175 16.3084 8.35841L17.0584 14.6084C17.3 16.6584 16.6667 18.3334 13.75 18.3334H6.25835C3.33335 18.3334 2.70002 16.6584 2.95002 14.6084L3.70003 8.35841C3.88336 6.74175 4.16669 5.41675 7.00002 5.41675Z"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M6.66663 6.66675V3.75008C6.66663 2.50008 7.49996 1.66675 8.74996 1.66675H11.25C12.5 1.66675 13.3333 2.50008 13.3333 3.75008V6.66675"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M17.0083 14.1917H6.66663" stroke="black" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <span class="text font-black">Add To Cart</span>
+                      </div>
+                    </button>
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- Slide 2 -->
+
+            <div class="swiper-slide">
+              <div class="slide-content">
+
+                <div class="watch-bg">
+                  <div class="watch-image">
+                    <img src="./assets/images/Ellipse 3.png" class="eclipse-bg" alt="Background Circle" />
+                    <img src="./assets/images/watch-2.png" alt="silver Watch" class="watch-img2" />
+                  </div>
+                </div>
+
+                <div class="watch-info">
+                  <h3 class="font-bold">Sleek White Gold Sophistication</h3>
+                  <p class="font-medium time-text">
+                    For A More Understated Luxury, Our White Gold Edition Offers A Cool, Modern Twist On Classic
+                    Elegance. The Polished White Gold-Plated Case And Pristine Emerald Green Dial Make This Watch A
+                    Versatile Statement Piece, Perfect For Any Occasion.
+                  </p>
+                  <div class="price-cart">
+
+                    <button class="price">
+                      <p class="font-black">$2,500</p>
+                    </button>
+
+                    <button class="add-to-cart">
+                      <div class="cart-original">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.00002 5.41675H13C15.8334 5.41675 16.1167 6.74175 16.3084 8.35841L17.0584 14.6084C17.3 16.6584 16.6667 18.3334 13.75 18.3334H6.25835C3.33335 18.3334 2.70002 16.6584 2.95002 14.6084L3.70003 8.35841C3.88336 6.74175 4.16669 5.41675 7.00002 5.41675Z"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M6.66663 6.66675V3.75008C6.66663 2.50008 7.49996 1.66675 8.74996 1.66675H11.25C12.5 1.66675 13.3333 2.50008 13.3333 3.75008V6.66675"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M17.0083 14.1917H6.66663" stroke="black" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <span class="text font-black">Add To Cart</span>
+                      </div>
+
+                      <div class="cart-hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.00002 5.41675H13C15.8334 5.41675 16.1167 6.74175 16.3084 8.35841L17.0584 14.6084C17.3 16.6584 16.6667 18.3334 13.75 18.3334H6.25835C3.33335 18.3334 2.70002 16.6584 2.95002 14.6084L3.70003 8.35841C3.88336 6.74175 4.16669 5.41675 7.00002 5.41675Z"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M6.66663 6.66675V3.75008C6.66663 2.50008 7.49996 1.66675 8.74996 1.66675H11.25C12.5 1.66675 13.3333 2.50008 13.3333 3.75008V6.66675"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M17.0083 14.1917H6.66663" stroke="black" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <span class="text font-black">Add To Cart</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+
+                <div class="watch-bg">
+                  <div class="watch-image">
+                    <img src="./assets/images/Ellipse 3.png" class="eclipse-bg" alt="Background Circle" />
+                    <img src="./assets/images/watch-3.png" alt="black Watch" class="watch-img3" />
+                  </div>
+                </div>
+
+                <div class="watch-info">
+                  <h3 class="font-bold">Bold Black Ceramic Precision</h3>
+                  <p class="font-medium time-text">
+                    A Striking Contrast Of Sleek Black Ceramic And The Refined Emerald Green Dial. This Watch Is
+                    Designed For Those Who Want To Stand Out Without Compromising On Luxury. Crafted For Durability And
+                    Style, It’s A True Statement Piece.
+                  </p>
+                  <div class="price-cart">
+                    <button class="price">
+                      <p class="font-black">$2,500</p>
+                    </button>
+
+                    <button class="add-to-cart">
+                      <div class="cart-original">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.00002 5.41675H13C15.8334 5.41675 16.1167 6.74175 16.3084 8.35841L17.0584 14.6084C17.3 16.6584 16.6667 18.3334 13.75 18.3334H6.25835C3.33335 18.3334 2.70002 16.6584 2.95002 14.6084L3.70003 8.35841C3.88336 6.74175 4.16669 5.41675 7.00002 5.41675Z"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M6.66663 6.66675V3.75008C6.66663 2.50008 7.49996 1.66675 8.74996 1.66675H11.25C12.5 1.66675 13.3333 2.50008 13.3333 3.75008V6.66675"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M17.0083 14.1917H6.66663" stroke="black" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <span class="text font-black">Add To Cart</span>
+                      </div>
+
+                      <div class="cart-hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.00002 5.41675H13C15.8334 5.41675 16.1167 6.74175 16.3084 8.35841L17.0584 14.6084C17.3 16.6584 16.6667 18.3334 13.75 18.3334H6.25835C3.33335 18.3334 2.70002 16.6584 2.95002 14.6084L3.70003 8.35841C3.88336 6.74175 4.16669 5.41675 7.00002 5.41675Z"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M6.66663 6.66675V3.75008C6.66663 2.50008 7.49996 1.66675 8.74996 1.66675H11.25C12.5 1.66675 13.3333 2.50008 13.3333 3.75008V6.66675"
+                            stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M17.0083 14.1917H6.66663" stroke="black" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <span class="text font-black">Add To Cart</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features-section -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="feature-content">
+          <span>
+            <h2 class="font-bold">Exquisite Craftsmanship</h2>
+            <img src="./assets/images/black-vector.png" alt="black-vector">
+          </span>
+        </div>
+
+        <div class="feature-card-container">
+
+          <div class="row-1">
+            <!-- card 1  -->
+            <div class="feature-card1">
+              <div class="card1-text">
+                <h4 class="font-bold">18K Gold-Plated Case</h4>
+                <p class="p-md font-medium">Rich, Timeless 18K Gold Plating For A Luxurious Finish.</p>
+              </div>
+              <div class="card1-image">
+                <img src="./assets/images/Vector.png" alt="box">
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="feature-card2">
+              <div class="card2-text">
+                <h4 class="font-bold">Sapphire Crystal Glass</h4>
+                <p class="p-md font-medium">Scratch-Resistant, Crystal-Clear Glass For Lasting Clarity.</p>
+              </div>
+              <div class="card2-image">
+                <img src="./assets/images/card-2.png" alt="card2-image">
+              </div>
+            </div>
+          </div>
+
+          <div class="row-2">
+            <!-- card 3  -->
+            <div class="feature-card3">
+              <div class="card3-text">
+                <h4 class="font-bold">Swiss Movement</h4>
+                <p class="p-md font-medium">Precision-Engineered Swiss Movement For Accurate Timekeeping.</p>
+              </div>
+              <div class="card3-image">
+                <img src="./assets/images/card-3.png" alt="card3-image">
+              </div>
+            </div>
+
+            <!-- card 4  -->
+            <div class="feature-card4">
+              <div class="card4-text">
+                <h4 class="font-bold">Water Resistance</h4>
+                <p class="p-md font-medium">50m Water Resistance For Style That Lasts Through Any Condition.</p>
+              </div>
+              <div class="card4-image">
+                <img src="./assets/images/card-4.png" alt="card4-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Unbox video Section  -->
+    <section class="unbox-section">
+      <div class="container">
+        <div class="unbox-section-wrapper">
+
+          <div class="unbox-text">
+            <h2 class="font-bold">Unbox The Legacy</h2>
+            <p class="font-medium">Unveil The Precision And Elegance Of Sellivue With Every Unboxing.<br> Discover The
+              Luxury Of The 18K
+              Gold Case And Emerald Dial.</p>
+          </div>
+          <div class="video-wrapper">
+            <video src="./assets/video/Luxury_Watch_Unboxing_Video_Ready 1.mp4" autoplay muted loop></video>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="customer-section">
+      <div class="container">
+        <div class="customer-section-wrapper">
+
+          <div class="customer-heading-main">
+            <div class="customer-heading">
+              <span>
+                <h2 class="font-bold">What Our Customers Say</h2>
+                <img src="./assets/images/black-vector.png" alt="black-vector">
+              </span>
+            </div>
+            <div class="customer-navigation">
+              <img src="./assets/images/black-left.png" alt="left-arrow" class="swiper-button-before">
+              <img src="./assets/images/black-right.png" alt="right-arrow" class="swiper-button-after">
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="customer-review-swiper1">
+              <div class="customer-1">
+                <div class="customer-card-1">
+                  <h4 class="font-bold h4">John Smith</h4>
+                  <p class="paragraph-sm font-medium">CEO Of Luxury Lifestyle</p>
+                </div>
+                <div class="customer-1-img">
+                  <img src="./assets/images/cust-1.png">
+                </div>
+              </div>
+              <div class="review-text">
+                <p class="h6 font-medium">Sellivue has changed how I perceive timepieces. The craftsmanship and
+                  attention to detail
+                  are
+                  unmatched. It’s more than just a watch; it’s an experience.</p>
+              </div>
+            </div>
+
+            <div class="customer-review-swiper2">
+              <div class="customer-2">
+                <div class="customer-card-2">
+                  <h4 class="font-bold h4">Michael Lee</h4>
+                  <p class="paragraph-sm font-medium">Fashion Influencer</p>
+                </div>
+                <div class="customer-2-img">
+                  <img src="./assets/images/cust-2.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- showcase section  -->
+    <section class="showcase-section">
+      <!-- <div class="container"> -->
+        <div class="showcase-wrapper">
+          <div class="showcase-text">
+            <h2 class="font-bold">Ready to Own Your Time?</h2>
+            <p class="font-medium paragraph-sm2">Elevate Your Experience With Sellivue. Order Yours Today And Wear The
+              Legacy
+              of Craftsmanship And
+              Precision.</p>
+
+            <div class="claim-btn">
+              <button class="claim-btn-text btn font-black">
+                <p class="font-black">Claim Your Timepiece</p>
+              </button>
+            </div>
+          </div>
+          <div class="showcase-bg">
+            <img src="./assets/images/Frame-7.png">
+          </div>
+        </div>
+      <!-- </div> -->
+    </section>
+
+    <section class="marquee-section">
+      <!-- <div class="container"> -->
+        <div class="marquee-wrapper">
+          <div class="marquee-track">
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+            <span class="marquee-item">
+              <h2 class="font-bold">Get A Demo</h2>
+              <img src="./assets/images/marquuee-arrow.png" alt="marquee-image">
+            </span>
+          </div>
+        </div>
+      <!-- </div> -->
+    </section>
+
+  </main>
+
+  <!-- footer section  -->
+
+  <footer class="footer">
+    <!-- <div class="container"> -->
+      <div class="footer-container">
+
+        <div class="footer-top">
+          <div class="footer-left">
+            <h2>Join Our Community</h2>
+          </div>
+          <form class="footer-right">
+            <input type="email" placeholder="Your Email">
+
+            <button class="sign-btn">
+              <p class="font-black">Sign Up</p>
+            </button>
+          </form>
+        </div>
+
+        <div class="footer-main">
+          <div class="left">
+            <h2 class="font-bold">The Art Of Time, Perfected.</h2>
+            <p class="contact-label">Get In Touch</p>
+            <a href="#" class="email-link font-medium">
+              <img src="./assets/images/footer-arrow.png" alt=""> Info@Sellivue.Com
+            </a>
+          </div>
+
+          <div class="nav-social">
+            <div class="nav font-medium">
+              <a href="#" class="a-links a-current">Home</a>
+              <a href="#" class="a-links">Features</a>
+              <a href="#" class="a-links">Gallery</a>
+              <a href="#" class="a-links">About</a>
+              <a href="#" class="a-links">Contact</a>
+            </div>
+            <p class="follow">Follow Us</p>
+            <div class="social">
+              <a href="#"><img src="./assets/images/insta.png" alt="instagram"></a>
+              <a href="#"><img src="./assets/images/linkedin.png" alt="linkedin"></a>
+              <a href="#"><img src="./assets/images/twitter.png" alt="twitter"></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="video-container">
+          <video class="m-video__video" autoplay muted playsinline loop data-wf-ignore="true" data-object-fit="cover">
+            <source src="assets/video/MicrosoftTeams-video.mp4" data-wf-ignore="true" />
+          </video>
+          <div class="video-overlay">
+            <svg viewBox="0 0 0 0">
+              <defs>
+                <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                  <text class="font-Bold" x="0" y="0.5" font-size="0.19">SELLIVUE</text>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+
+        <div class="footer-bottom">
+          <p class="p-1 font-medium">© 2025 Sellivue. All Rights Reserved.</p>
+          <!-- <p class="p-2 font-medium">Privacy Policy | Terms of Service</p> -->
+          <div class="footer-botto">
+            <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
+            <span class="divider">|</span>
+            <a href="/terms-of-service" class="footer-link">Terms of Service</a>
+          </div>
+
+        </div>
+
+      </div>
+    <!-- </div> -->
+  </footer>
+
+
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
